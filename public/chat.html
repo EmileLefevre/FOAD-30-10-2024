@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.4.1/tinymce.min.js"
+        integrity="sha512-TDS3vtbiUCZzBBZO8LFud171Hw+ykrQgkrvjwV+i+XsI0LC46PR4affO+9VbgcR79KreoN7J0HKup9mrle4gRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.min.js"
+        integrity="sha512-8ExARjWWkIllMlNzVg7JKq9RKWPlJABQUNq6YvAjE/HobctjH/NA+bSiDMDvouBVjp4Wwnf1VP1OEv7Zgjtuxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="./assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section id="saisiePublic">
+        <textarea id="textPublic"></textarea>
+        <button id="sendPublic"> Envoyer</button>
+        <button id="friends">Mes amis</button>
+        <p id="amis"></p>
+    </section>
+    <div id="popupPrivateMessagesSender">
+        <h2 id="messageTo">Envoyer un message privé à </h2>
+        <textarea id="popupTextArea"></textarea>
+        <button id="sendPopupMessage">Envoyer</button>
+        <button id="closePopup">Fermer</button>
+    </div>
+    <div id="popupPrivateMessagesRecipient">
+        <h2 id="messageFrom">Vous avez recu un message privé de</h2>
+        <textarea id="popupTextAreaSender" readonly></textarea>
+        <button id="closePopupRecipient">Fermer</button>
+    </div>
+    <section id="messagesPublic"></section>
+    <section id="clientsList"></section>
+    <section id="privateMessage"></section>
+    <div id="errorMessage"></div>
+
+
+
+</body>
+
+</html>

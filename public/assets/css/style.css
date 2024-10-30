@@ -1,0 +1,48 @@
+#saisiePrivate {
+    display: none;
+}
+#messagesPivate {
+    display: none;
+}
+
+h2 {
+    border: solid;
+    text-align: center;
+}
+
+p1 {
+    color: red;
+}
+
+#newMessage {
+    border: solid;
+}
+
+#popupPrivateMessagesSender {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#popupPrivateMessagesRecipient {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#errorMessage {
+    color: red;
+    display: none;
+}
